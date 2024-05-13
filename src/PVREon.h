@@ -48,6 +48,7 @@ struct EonChannel
   std::string sig;
   bool aaEnabled;
   bool subscribed;
+  int ageRating;
 //  std::string strStreamURL;
 };
 
@@ -158,8 +159,6 @@ protected:
   bool GetServer(bool isLive, EonServer& myServer);
 
 private:
-  PVR_ERROR CallMenuHook(const kodi::addon::PVRMenuhook& menuhook);
-
   void SetStreamProperties(std::vector<kodi::addon::PVRStreamProperty>& properties,
                            const std::string& url,
                            const bool& realtime, const bool& playTimeshiftBuffer, const bool& isLive /*,

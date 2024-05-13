@@ -184,6 +184,14 @@
           </constraints>
           <control type="edit" format="integer" />
         </setting>
+        <setting id="agerating" type="integer" label="30056">
+          <level>0</level>
+          <default>18</default>
+          <constraints>
+            <allowempty>false</allowempty>
+          </constraints>
+          <control type="edit" format="integer" />
+        </setting>
       </group>
     </category>
     <category id="streaming" label="30049">

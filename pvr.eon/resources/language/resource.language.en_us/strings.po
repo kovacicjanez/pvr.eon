@@ -232,6 +232,10 @@ msgctxt "#30055"
 msgid "Please enter or correct username and password in the settings"
 msgstr ""
 
+msgctxt "#30056"
+msgid "Age Rating"
+msgstr ""
+
 msgctxt "#30500"
 msgid "Inputstream error"
 msgstr ""

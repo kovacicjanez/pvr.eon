@@ -21,6 +21,7 @@ public:
   const int& GetEonServiceProvider() const { return m_eonServiceProvider; }
   const int& GetPlatform() const { return m_eonPlatform; }
   const int& GetInputstream() const { return m_eonInputstream; }
+  const int& GetAgeRating() const { return m_eonAgeRating; }
   const std::string& GetEonUsername() const { return m_eonUsername; }
   const std::string& GetEonPassword() const { return m_eonPassword; }
   const std::string& GetEonAccessToken() const { return m_eonAccessToken; }
@@ -46,6 +47,7 @@ private:
   int m_eonServiceProvider;
   int m_eonPlatform;
   int m_eonInputstream;
+  int m_eonAgeRating;
   std::string m_eonUsername;
   std::string m_eonPassword;
   std::string m_eonAccessToken;

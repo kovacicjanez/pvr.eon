@@ -370,6 +370,18 @@ std::string HttpClient::HttpRequest(const std::string& action, const std::string
     }
     if (refresh_successful) {
       content = HttpRequestToCurl(curl_reauth, action, url, postData, statusCode);
+    } else {
+      std::string refresh_token = m_settings->GetEonRefreshToken();
+      if (!refresh_token.empty() && !(url.find(BROKER_URL) != std::string::npos || url.find("v1/devices") != std::string::npos)) {
+        // Try to get new token as last resort
+        m_settings->SetSetting("refreshtoken", "");
+        refresh_successful = RefreshToken();
+        access_token = m_settings->GetEonAccessToken();
+        curl_reauth.AddHeader("Authorization", "bearer " + access_token);
+        if (refresh_successful) {
+          content = HttpRequestToCurl(curl_reauth, action, url, postData, statusCode);
+        }
+      }
     }
   }
 

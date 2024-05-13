@@ -20,5 +20,9 @@ v21.7.4
   - Exploit some more EPG data (live, age, seasons, episodes)
 v21.7.5
   - Fix startup with empty credentials and web
-v20.7.6
+v21.7.6
   - Try to fix armv7a
+v21.7.7
+  - Fix refresh token when updating
+v21.7.8
+  - New Setting filter for channel age rating

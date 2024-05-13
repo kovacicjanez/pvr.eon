@@ -311,26 +311,19 @@ bool CPVREon::GetDeviceFromSerial()
 {
   std::string postData;
 
-  if (m_platform == PLATFORM_ANDROIDTV) {
-    postData = "{\"deviceName\":\"" + EonParameters[m_platform].device_name +
-                  "\",\"deviceType\":\"" + EonParameters[m_platform].device_type +
-                  "\",\"modelName\":\"" + EonParameters[m_platform].device_model +
-                  "\",\"platform\":\"" + EonParameters[m_platform].device_platform +
-                  "\",\"serial\":\"" + m_device_serial +
-                  "\",\"clientSwVersion\":\"" + EonParameters[m_platform].client_sw_version +
-                  "\",\"clientSwBuild\":\"" + EonParameters[m_platform].client_sw_build +
-                  "\",\"systemSwVersion\":{\"name\":\"" + EonParameters[m_platform].system_sw +
-                  "\",\"version\":\"" + EonParameters[m_platform].system_version +
-                  "\"},\"fcmToken\":\"\"}";
-        //TODO: implement parameter fcmToken...
-  } else {
-    postData = "{\"deviceName\":\"\",\"deviceType\":\"" + EonParameters[m_platform].device_type +
-                  "\",\"modelName\":\"" + EonParameters[m_platform].device_model +
-                  "\",\"platform\":\"" + EonParameters[m_platform].device_platform +
-                  "\",\"serial\":\"" + m_device_serial +
-                  "\",\"clientSwVersion\":\"\",\"systemSwVersion\":{\"name\":\"" + EonParameters[m_platform].system_sw +
-                  "\",\"version\":\"" + EonParameters[m_platform].system_version + "\"}}";
-  }
+  postData = "{\"deviceName\":\"" + EonParameters[m_platform].device_name +
+                "\",\"deviceType\":\"" + EonParameters[m_platform].device_type +
+                "\",\"modelName\":\"" + EonParameters[m_platform].device_model +
+                "\",\"platform\":\"" + EonParameters[m_platform].device_platform +
+                "\",\"serial\":\"" + m_device_serial +
+                "\",\"clientSwVersion\":\"" + EonParameters[m_platform].client_sw_version;
+  if (m_platform == PLATFORM_ANDROIDTV)
+    postData += "\",\"clientSwBuild\":\"" + EonParameters[m_platform].client_sw_build;
+  postData += "\",\"systemSwVersion\":{\"name\":\"" + EonParameters[m_platform].system_sw +
+              "\",\"version\":\"" + EonParameters[m_platform].system_version + "\"}";
+  if (m_platform == PLATFORM_ANDROIDTV)
+    postData += ",\"fcmToken\":\"\""; //TODO: implement parameter fcmToken...
+  postData += "}";
 
   std::string url = m_api + "v1/devices";
 
@@ -660,6 +653,13 @@ bool CPVREon::LoadChannels(const bool isRadio)
 
     eon_channel.aaEnabled = Utils::JsonBoolOrFalse(channelItem, "aaEnabled");
     eon_channel.subscribed = Utils::JsonBoolOrFalse(channelItem, "subscribed");
+    int ageRating = 0;
+    try {
+      ageRating = std::stoi(Utils::JsonStringOrEmpty(channelItem,"ageRating"));
+    } catch (std::invalid_argument&e) {
+
+    }
+    eon_channel.ageRating = ageRating;
     const rapidjson::Value& categories = channelItem["categories"];
     for (rapidjson::Value::ConstValueIterator itr2 = categories.Begin();
         itr2 != categories.End(); ++itr2)
@@ -1022,7 +1022,8 @@ PVR_ERROR CPVREon::GetChannels(bool bRadio, kodi::addon::PVRChannelsResultSet& r
   for (const auto& channel : m_channels)
   {
 
-    if (channel.bRadio == bRadio)
+    int ageRating = m_settings->GetAgeRating();
+    if (channel.bRadio == bRadio && ageRating >= channel.ageRating)
     {
       kodi::addon::PVRChannel kodiChannel;
 

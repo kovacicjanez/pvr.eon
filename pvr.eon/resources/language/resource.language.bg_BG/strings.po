@@ -1,0 +1,249 @@
+# Kodi Media Center language file
+# Addon Name: PVR EON Client
+# Addon id: pvr.eon
+# Addon Provider: Pulse-Eight Ltd.
+msgid ""
+msgstr ""
+"Project-Id-Version: KODI Main\n"
+"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: bg_BG\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+msgctxt "Добавка"
+msgid "EON PVR Клиент"
+msgstr "EON PVR Клиент"
+
+msgctxt "Описание на добавката"
+msgid "PVR клиент за EON, който ви позволява да гледате на живо телевизионни канали, да слушате радиостанции и да превъртате до 7 дни назад."
+msgstr "PVR клиент за EON, който ви позволява да гледате на живо телевизионни канали, да слушате радиостанции и да превъртате до 7 дни назад."
+
+msgctxt "Информация за добавката"
+msgid "Неофициана добавка - Използвайте на собствен риск"
+msgstr "Неофициана добавка - Използвайте на собствен риск"
+
+msgctxt "#30000"
+msgid "Потребителско имe"
+msgstr ""
+
+msgctxt "#30001"
+msgid "Парола"
+msgstr ""
+
+msgctxt "#30002"
+msgid "IP Адрес"
+msgstr ""
+
+msgctxt "#30003"
+msgid "Токен за достъп"
+msgstr ""
+
+msgctxt "#30004"
+msgid "Устройство ID"
+msgstr ""
+
+msgctxt "#30005"
+msgid "Устройство номер"
+msgstr ""
+
+msgctxt "#30006"
+msgid "Опресняване на токена"
+msgstr ""
+
+msgctxt "#30007"
+msgid "Абонат ID"
+msgstr ""
+
+msgctxt "#30008"
+msgid "Ключ за поток"
+msgstr ""
+
+msgctxt "#30009"
+msgid "Потребител на потока"
+msgstr ""
+
+msgctxt "#30010"
+msgid "Извикан елемент (настройка) от менюто на PVR клиента"
+msgstr ""
+
+msgctxt "#30011"
+msgid "Извикан елемент (настройка) от менюто на PVR клиента"
+msgstr ""
+
+msgctxt "#30012"
+msgid "Извикан елемент (настройка) от менюто на PVR клиента"
+msgstr ""
+
+msgctxt "#30014"
+msgid "Удостоверяване"
+msgstr ""
+
+msgctxt "#30015"
+msgid "EON.TV"
+msgstr ""
+
+msgctxt "#30020"
+msgid "Скриване на канали с абонамент"
+msgstr ""
+
+msgctxt "#30021"
+msgid "Скриване на канали блокирани според държавата"
+msgstr ""
+
+msgctxt "#30022"
+msgid "Активирайте Телевизия"
+msgstr ""
+
+msgctxt "#30023"
+msgid "Активирайте Радио"
+msgstr ""
+
+msgctxt "#30024"
+msgid "Използвайте Категории"
+msgstr ""
+
+msgctxt "#30025"
+msgid "Канали и Групи"
+msgstr ""
+
+msgctxt "#30026"
+msgid "Канали"
+msgstr ""
+
+msgctxt "#30027"
+msgid "Портал за самообслужване"
+msgstr ""
+
+msgctxt "#30028"
+msgid "Токен за достъп за самообслужване"
+msgstr ""
+
+msgctxt "#30029"
+msgid "Токен за опресняване на самообслужване"
+msgstr ""
+
+msgctxt "#30030"
+msgid "Идентичност за самообслужване"
+msgstr ""
+
+msgctxt "#30031"
+msgid "Сериен номер на устройството"
+msgstr ""
+
+msgctxt "#30032"
+msgid "Общ токен за достъп"
+msgstr ""
+
+msgctxt "#30033"
+msgid "Номер на първия канал"
+msgstr ""
+
+msgctxt "#30034"
+msgid "Доставчик на услугата"
+msgstr ""
+
+msgctxt "#30035"
+msgid "SBB"
+msgstr ""
+
+msgctxt "#30036"
+msgid "Telemach"
+msgstr ""
+
+msgctxt "#30037"
+msgid "NetTV Plus"
+msgstr ""
+
+msgctxt "#30038"
+msgid "Виваком България"
+msgstr ""
+
+msgctxt "#30039"
+msgid "EON Hrvatska"
+msgstr ""
+
+msgctxt "#30040"
+msgid "Nova"
+msgstr ""
+
+msgctxt "#30041"
+msgid "Платформа"
+msgstr ""
+
+msgctxt "#30042"
+msgid "WEB версия (Не поддържа 4К канали)"
+msgstr ""
+
+msgctxt "#30043"
+msgid "Android TV (Поддържа 4К канали, лимит до ЕДНО устройство)"
+msgstr ""
+
+msgctxt "#30044"
+msgid "WebOS"
+msgstr ""
+
+msgctxt "#30045"
+msgid "Използване на къси имена за каналите"
+msgstr ""
+
+msgctxt "#30046"
+msgid "Моля въведете 6 цифрения код, за да регистрирате устройството"
+msgstr ""
+
+msgctxt "#30047"
+msgid "Моля влезте във вашия профил в сайта на Виваком и отидете в Настройки -> Телевизия -> Управление на Smart TV Устройства и въведете 6 цифрения номер за активация. Има лимит до ЕДНО устрийство за активация! Вие имате "
+msgstr ""
+
+msgctxt "#30048"
+msgid "минути оставащо време."
+msgstr ""
+
+msgctxt "#30049"
+msgid "Поточно предаване"
+msgstr ""
+
+msgctxt "#30050"
+msgid "Входящ поток"
+msgstr ""
+
+msgctxt "#30051"
+msgid "Изберете вида на входящия поток"
+msgstr ""
+
+msgctxt "#30052"
+msgid "inputstream.adaptive"
+msgstr ""
+
+msgctxt "#30053"
+msgid "inputstream.ffmpegdirect"
+msgstr ""
+
+msgctxt "#30054"
+msgid "Грешка при удостоверяване"
+msgstr ""
+
+msgctxt "#30055"
+msgid "Моля въведете правилно потребителско имe и парола в настройките"
+msgstr ""
+
+msgctxt "#30056"
+msgid "Възрастово ограничение"
+msgstr ""
+
+msgctxt "#30500"
+msgid "Грешка при входящия поток"
+msgstr ""
+
+msgctxt "#30501"
+msgid "%s приставка не е инсталирана."
+msgstr ""
+
+msgctxt "#30502"
+msgid "%s приставка не е включена."
+msgstr ""

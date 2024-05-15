@@ -22,11 +22,14 @@
     <summary lang="de_DE">EON PVR Client</summary>
     <summary lang="en_GB">EON PVR Client</summary>
     <summary lang="en_US">EON PVR Client</summary>
+    <summary lang="bg_BG">EON PVR Клиент</summary>
     <description lang="de_DE">PVR-Client für Eon. Unterstützt TV, TV-Guide (EPG) und 7-Tage Replay</description>
     <description lang="en_GB">PVR-Client for Eon. Supports TV, TV-Guide (EPG) and 7 day replay</description>
     <description lang="en_US">PVR-Client for Eon. Supports TV, TV-Guide (EPG) and 7 day replay</description>
+    <description lang="bg_BG">PVR клиент за EON, който ви позволява да гледате на живо телевизионни канали, да слушате радиостанции и да превъртате до 7 дни назад</description>
     <disclaimer lang="de_DE">Keine offizielle Version. Alle Warenzeichen verbleiben bei Eon. Benutzung auf eigene Gefahr.</disclaimer>
     <disclaimer lang="en_GB">No official version. All trademarks belong to Eon. Use at own risk.</disclaimer>
     <disclaimer lang="en_US">No official version. All trademarks belong to Eon. Use at own risk.</disclaimer>
+    <disclaimer lang="bg_BG">Неофициална версия. Всички запазени марки принадлежат на EON. Използвайте на собствен риск.</disclaimer>
   </extension>
 </addon>

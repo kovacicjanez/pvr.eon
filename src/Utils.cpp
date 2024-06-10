@@ -12,6 +12,8 @@
 #include <iostream>
 #include <kodi/Filesystem.h>
 #include <kodi/General.h>
+#include <time.h>
+#define timegm _mkgmtime
 
 std::string Utils::GetFilePath(const std::string &strPath, bool bUserPath)
 {

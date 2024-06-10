@@ -121,7 +121,7 @@ std::string aes_encrypt_cbc(const std::string &iv_str, const std::string &key, c
 
     std::ostringstream convert;
     for (int i = 0; i < dlenu; i++) {
-        convert << hexarray[i];
+        convert  hexarray[i];
     }
     std::string output = convert.str();
 
@@ -1122,7 +1122,7 @@ PVR_ERROR CPVREon::GetStreamProperties(
 
     std::ostringstream convert;
     for (int i = 0; i < block_size; i++) {
-        convert << (uint8_t) rand();
+        convert  (uint8_t) rand();
     }
     std::string iv_str = convert.str();
 
